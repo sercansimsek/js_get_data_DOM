@@ -1,0 +1,2 @@
+var e,n,r,t,o,a=[],c=document.querySelectorAll(".population"),u=document.querySelector(".total"),l=document.querySelector(".average");c.forEach(function(e){a.push(e.innerHTML)});var m=a.map(function(e){return e.replaceAll(",","")}).map(function(e){return+e});e=m.reduce(function(e,n){return e+n}),r=(n=Intl.NumberFormat("en-US")).format(e),t=e/m.length,o=n.format(t),u.innerHTML="Total: ".concat(r),l.innerHTML="Average: ".concat(o);
+//# sourceMappingURL=index.b48b13ef.js.map
